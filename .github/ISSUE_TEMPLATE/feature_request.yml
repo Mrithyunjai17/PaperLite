@@ -1,0 +1,17 @@
+name: Feature request
+description: Suggest a focused improvement to PaperLite.
+title: "[Feature]: "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: need
+    attributes:
+      label: What would you like PaperLite to do?
+      description: Describe the workflow or problem this would improve.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Suggested behavior
+      description: Explain how the feature could remain simple, fast, and offline.
