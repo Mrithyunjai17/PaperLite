@@ -105,11 +105,12 @@ button:disabled { opacity: .35; cursor: default; }
 .feature-row svg { width: 14px; height: 14px; }
 
 .document-area, .page-scroll { width: 100%; height: 100%; }
-.page-scroll { overflow: auto; padding: 42px 54px 110px; scroll-behavior: smooth; }
+.page-scroll { overflow: auto; overscroll-behavior: contain; padding: 42px 54px 110px; scroll-behavior: smooth; }
 .page-stream { display: flex; flex-direction: column; align-items: center; gap: 34px; min-width: max-content; }
 .page-frame { position: relative; flex: 0 0 auto; scroll-margin-top: 28px; }
 .page-number-badge { position: absolute; top: -20px; left: 0; color: #918d83; font-size: 9px; font-weight: 600; letter-spacing: .05em; }
-.page-surface { position: relative; margin: 0 auto; background: white; box-shadow: var(--shadow); user-select: none; touch-action: none; overflow: hidden; }
+.page-surface { position: relative; margin: 0 auto; background: white; box-shadow: var(--shadow); user-select: none; touch-action: pan-y; overflow: hidden; }
+.tool-pen .page-surface, .tool-highlight .page-surface { touch-action: none; }
 .pdf-canvas { position: absolute; inset: 0; display: block; }
 .page-placeholder { position: absolute; inset: 0; display: grid; place-items: center; color: #aaa69b; background: #f8f7f2; font-size: 11px; z-index: 1; }
 .page-placeholder span { padding: 7px 10px; background: #efede6; border-radius: 7px; }
